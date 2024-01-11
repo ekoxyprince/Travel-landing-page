@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero-2{
+    background-image: url('../images/hero-sec2.png');
+    background-repeat: no-repeat;
+    background-position: top -1rem left -10rem;
+    background-size: contain;
+}
+#cicleHero{
+    width: 395px;
+    height: 321px;
+    border-radius: 405px;
+    background: #f00;
+    filter: blur(250px);
+    position: absolute;
+    top: 10%;
+    left: -3%;
+} 
+#services-background{
+    background-image: url('../images/services.png'); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position:95% -25%;
+    width:100%;
+    height: 100%;
+    z-index:-1;
+    filter: blur(25px);
+}
+#dest1,#dest2,#dest3{
+    width: 100%;
+    height: 13rem;
+    /* position: absolute; */
+    top: 0;   
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 20% left 0%;
+}
+#dest1{
+    background-image: url('../images/dest1.png'); 
+}
+#dest2{
+    background-image: url('../images/dest2.png'); 
+}
+#dest3{
+    background-image: url('../images/dest3.png'); 
+}
+#menu-btn{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    transition: all .3s;
+}
+.hamburger-start,
+.hamburger-middle,
+.hamburger-end{
+    top: 0%;
+    left: 0%;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    background: #000;
+    transition: all .35s;
+}
+.hamburger-middle{
+    transform: translateY(7px);
+}
+.hamburger-end{
+    transform: translateY(14px);
+}
+.active .hamburger-start{
+    transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+.active .hamburger-middle{
+    display: none;
+}
+.active .hamburger-end{
+    transform: rotate(-45deg) translateX(-6px) translateY(6px);
+}
+@media(max-width:1486px){
+    #hero-2{
+        background-image: url('../images/hero-sec2.png');
+        background-repeat: no-repeat;
+        background-position: top 0% left 0%;
+    } 
+    #cicleHero{
+        top: 18%;
+        left: -10%;
+    } 
+}
+@media(max-width:520px){
+    #cicleHero{
+        width: 305px;
+        height: 231px;
+    } 
+    #services-background{
+          background-size: cover;  
+    }
+    
+}
+
+
